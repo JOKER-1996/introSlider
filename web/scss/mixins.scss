@@ -1,0 +1,24 @@
+@mixin h($property) {
+	height: $property;
+}
+
+@mixin fs($property) {
+	font-size: $property;
+}
+
+@mixin mgA {
+	margin: 0 auto;
+}
+
+@mixin w($property) {
+	width: $property;
+}
+
+@mixin bgCol($property) {
+	background-color: $property;
+}
+
+@mixin lH($property) {
+	line-height: $property;
+}
+

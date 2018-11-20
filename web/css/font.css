@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Raleway Medium';
+  src: url("../fonts/Raleway Medium/RalewayMedium.eot");
+  src: url("../fonts/Raleway Medium/RalewayMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway Medium/RalewayMedium.woff") format("woff"), url("../fonts/Raleway Medium/RalewayMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway Regular';
+  src: url("../fonts/Raleway Regular/RalewayRegular.eot");
+  src: url("../fonts/Raleway Regular/RalewayRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway Regular/RalewayRegular.woff") format("woff"), url("../fonts/Raleway Regular/RalewayRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Black';
+  src: url("../fonts/Roboto Black/Roboto-Black.eot");
+  src: url("../fonts/Roboto Black/Roboto-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto Black/Roboto-Black.woff") format("woff"), url("../fonts/Roboto Black/Roboto-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans Bold';
+  src: url("../fonts/Open Sans Bold/OpenSansBold.eot");
+  src: url("../fonts/Open Sans Bold/OpenSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Open Sans Bold/OpenSansBold.woff") format("woff"), url("../fonts/Open Sans Bold/OpenSansBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}

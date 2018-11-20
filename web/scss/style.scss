@@ -1,0 +1,140 @@
+@import 'mixins';
+@import 'variable';
+@import 'font';
+@import 'slick';
+@import 'slick-theme';
+
+body {
+	margin: 0;
+	padding: 0;
+	@include bgCol($bgcolor);
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	@include w(100%);
+	@include h(100%);
+}
+
+$slick-dot-size: 16px;
+$slick-dot-color-active: rgba($white, .87);
+$slick-dot-color: rgba($white, .55);
+
+.head {
+	@include w(100%);
+	@include h(100px);
+	@include bgCol(inherit);
+	
+	&__logo {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		color: rgba($white, .87);
+		@include fs(36px);
+		float: left;
+		padding: 10px 0 0 20px;
+		cursor: pointer;
+	}
+
+	&__ul {
+		font-size: 0;
+		float: right;
+		margin: 25px 15px 0 0;
+	}
+
+	&__li {
+		display: inline-block;
+		padding: 0 15px 0 0;
+	}
+
+	&__a {
+		text-decoration: none;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		color: rgba($white, .87);
+		@include fs(14px);
+		
+		&:hover {
+			color: $yellow;
+			border-bottom: 2px solid $yellow;
+		}
+	}
+}
+
+.container {
+	clear: both;
+	@include w(90%);
+	margin: 0 auto;
+	
+	&__slider {
+		@include w(90%);
+		margin: 0 auto;
+		margin-bottom: 100px;
+		
+		&--h1 {
+			text-align: $tac;
+			color: rgba($white, .87);
+			@include fs(60px);
+			font-family: 'Playfair Display', serif;
+			transform: scaleY(1.0011);
+			padding: 100px 0 30px 0;
+		}
+
+		&--p {
+			color:  rgba(255, 255, 255, 0.87);
+			@include fs(29.97px);
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 300;
+			line-height: 47.946px;
+			text-align: center;
+			transform: scaleY(1.0011);
+		}
+
+		&--btn {
+			@include w(185px);
+			@include h(57px);
+			@include bgCol($yellow);
+			border: none;
+			border-radius: 25px 25px 25px 25px;
+			color:  rgba(255, 255, 255, 0.87);
+			@include fs(18px);
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 300;
+			cursor: pointer;
+			margin: 30px 0 0 50%;
+			transform: translateX(-50%);
+			
+			&:hover {
+				box-sizing: border-box;
+				border: 2px solid $yellow;
+				color: $yellow;
+				@include bgCol(inherit);
+				transition: .5s;
+			}
+		}
+	}
+}
+
+.slider__arrow--left {
+	position: absolute;
+	margin: -310px 0 0 1%;
+}
+
+.slider__arrow--right {
+	position: absolute;
+	margin: -310px 0 0 97%;
+}
+
+.slick-dots {
+
+    li {
+        
+        button {
+           
+            &:before {
+                font-size: 40px;
+                color: rgba(255,255,255,.55);
+            }
+        }
+        &.slick-active button:before {
+            color: rgba(255,255,255,.87);
+        }
+    }
+}
